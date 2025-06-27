@@ -1,0 +1,401 @@
+﻿Exportfile for AOT version 1.0 or later
+Formatversion: 1
+
+***Element: DBT
+
+; Microsoft Dynamics AX Table : APX_CostAccountLedger unloaded
+; --------------------------------------------------------------------------------
+  TABLEVERSION 1
+  
+  TABLE #APX_CostAccountLedger
+    Id 41328
+    PROPERTIES
+      Name                #APX_CostAccountLedger
+      Label               #@APX8718
+      Temporary           #Yes
+      ClusterIndex        #TransDateIdx
+    ENDPROPERTIES
+    
+    FIELDS
+      FIELD #Voucher
+        Id 40001
+        STRING
+        PROPERTIES
+          Name                #Voucher
+          HelpText            #@SYS2090
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #Voucher
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #TransDate
+        Id 40002
+        DATE
+        PROPERTIES
+          Name                #TransDate
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #TransDate
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #AccountNum
+        Id 40003
+        STRING
+        PROPERTIES
+          Name                #AccountNum
+          HelpText            #@SYS15409
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #LedgerAccount
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #AccountName
+        Id 40004
+        STRING
+        PROPERTIES
+          Name                #AccountName
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #AccountName
+              #
+            ENDARRAY
+          StringSize          #60
+        ENDPROPERTIES
+        
+      FIELD #CurrencyCode
+        Id 40005
+        STRING
+        PROPERTIES
+          Name                #CurrencyCode
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #CurrencyCode
+              #
+            ENDARRAY
+          StringSize          #3
+        ENDPROPERTIES
+        
+      FIELD #AmountCur
+        Id 40006
+        REAL
+        PROPERTIES
+          Name                #AmountCur
+          HelpText            #@SYS10170
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #AmountCur
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #AmountMST
+        Id 40007
+        REAL
+        PROPERTIES
+          Name                #AmountMST
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #AmountMSTDebCred
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #Txt
+        Id 40008
+        STRING
+        PROPERTIES
+          Name                #Txt
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #TransTxt
+              #
+            ENDARRAY
+          StringSize          #60
+        ENDPROPERTIES
+        
+      FIELD #Dimension
+        Id 40009
+        STRING
+        PROPERTIES
+          Name                #Dimension
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #Dimension
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #TKR_Channel
+        Id 40010
+        STRING
+        PROPERTIES
+          Name                #TKR_Channel
+          Label               #@SYS88788
+          HelpText            #@SYS28177
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #Dimension_Division
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #TKR_Brand
+        Id 40011
+        STRING
+        PROPERTIES
+          Name                #TKR_Brand
+          Label               #@ZTS1001
+          HelpText            #@SYS28177
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #Dimension_Team
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #TKR_ShopTypeCode
+        Id 40012
+        STRING
+        PROPERTIES
+          Name                #TKR_ShopTypeCode
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #TKR_ShopTypeCode
+              #
+            ENDARRAY
+          StringSize          #60
+        ENDPROPERTIES
+        
+      FIELD #TKR_Series
+        Id 40013
+        STRING
+        PROPERTIES
+          Name                #TKR_Series
+          Label               #@ZTS1051
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #TKR_Series
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #Cust_CustAttribute
+        Id 40014
+        STRING
+        PROPERTIES
+          Name                #Cust_CustAttribute
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #CustAccount
+              #
+            ENDARRAY
+          StringSize          #20
+        ENDPROPERTIES
+        
+      FIELD #AmountCur_MultiItem
+        Id 40015
+        REAL
+        PROPERTIES
+          Name                #AmountCur_MultiItem
+          Label               #@CON96
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #AmountCur
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #CostCenter
+        Id 40016
+        STRING
+        PROPERTIES
+          Name                #CostCenter
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #CctrDimension
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #AmountCur_MultiCctr
+        Id 40017
+        REAL
+        PROPERTIES
+          Name                #AmountCur_MultiCctr
+          Label               #@CON96
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #AmountCur
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+      FIELD #SRCRecId
+        Id 40018
+        INT64
+        PROPERTIES
+          Name                #SRCRecId
+          Label               #@CON276
+          Table               #APX_CostAccountLedger
+          ExtendedDataType    
+            ARRAY 
+              #recId
+              #
+            ENDARRAY
+        ENDPROPERTIES
+        
+    ENDFIELDS
+    GROUPS
+    ENDGROUPS
+    
+    INDICES
+      #TransDateIdx
+      Id 40001
+      PROPERTIES
+        Name                #TransDateIdx
+      ENDPROPERTIES
+      
+      INDEXFIELDS
+        #TransDate
+        #Voucher
+      ENDINDEXFIELDS
+      
+    ENDINDICES
+    REFERENCES
+    ENDREFERENCES
+    
+    DELETEACTIONS
+    ENDDELETEACTIONS
+    
+  ENDTABLE
+  
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">비용계정원장 조회</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@APX8718</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">트랜잭션 전표번호</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@SYS2090</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">원장 계정번호</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@SYS15409</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">트랜잭션 금액(지정 통화)</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@SYS10170</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">채널</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@SYS88788</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">후속 인식을 위한 차원 지정.</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@SYS28177</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">브랜드</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@ZTS1001</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">계열</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@ZTS1051</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">금액</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@CON96</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+<Table:Record name="TmpSysLabel"
+       xmlns:Table='urn:www.microsoft.com/Formats/Table'>
+    <Table:Field name="Language">en-us</Table:Field>
+    <Table:Field name="Label">원천 레코드 ID</Table:Field>
+    <Table:Field name="Description"></Table:Field>
+    <Table:Field name="LabelId">@CON276</Table:Field>
+    <Table:Field name="SysLabelApplModule">0</Table:Field>
+    <Table:Field name="recVersion">0</Table:Field>
+</Table:Record>
+
+
+***Element: END
